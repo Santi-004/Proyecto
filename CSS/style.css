@@ -1,0 +1,30 @@
+/* Define el color del fondo, el tamaño y centra el formulario.*/
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+        background-image: linear-gradient(to top, #6253b9,#cfd5e4, #6253b9);
+}
+
+
+/* Define la fuente del titulo y la posicion del texto. */
+#Formulario h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;
+    color: white;
+    animation: arriba 2.5s ease-in-out;
+}
+
+/* Animación para el titulo */
+@keyframes arriba{
+    0%{
+        transform: translatey(0);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(-8px);
+        opacity: 1;
+    }
+}
