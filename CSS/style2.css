@@ -109,3 +109,26 @@ input{
     text-align: center;
 }
 
+/* Estilo cuando el mouse esta encima del casillero del formulario */
+input:hover{
+    transform: scale(1.05);
+}
+
+/* Define el color del botón, su margen, borde y color de letra */
+button{
+    background-color: white;
+    color: black;
+    width: 95%;
+    border: 2px, solid;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+/* Efecto cuando el cursor del mouse esta por encima del boton "Enviar" */
+button:hover{
+    transform: scale(1.05);
+    background-color: #6253b9;
+    color: white;
+}
