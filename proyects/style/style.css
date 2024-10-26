@@ -1,0 +1,94 @@
+body{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    font-size: 250%;
+}
+
+header .logo img {
+    height: 100px;
+    width: 100px;
+}
+
+nav ul li a:hover{
+    text-decoration:wavy;
+    color: white;
+    opacity: 50%;
+    text-decoration: underline;
+}
+
+.inicio{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    background-color: white;
+    height: 300vh;
+    width: 100%;
+    text-align: center;
+    background:linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+     url(../img/blancanaciones/WhatsApp\ Image\ 2024-10-24\ at\ 11.28.41\ AM\ \(1\).jpeg)  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 1px;
+}
+
+
+.iniciobienvenida{
+    margin-bottom: 2px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iniciobienvenida p{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bienvenida{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    transform: translateY(90%);
+}
+
+.logo2{
+    display: flex;
+    top: 25%;
+    justify-content: center;
+    transform: translateY(40%);
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    transform: translateY(30%);
+}
+
+.sobrenosotros{
+    font-size:20px;
+    justify-content: center;
+    display: flex;
+ 
+}
