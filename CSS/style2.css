@@ -66,7 +66,7 @@ input{
 
 /* Define el icono del placeholder Nombre y Apellido */
 #Nom::placeholder{
-    background-image: url(../Imagenes/PersonaIcono.png);
+    background-image: url(../Imagenes/ImgForm/PersonaIcono.png);
     background-size: 20px, 15px;
     background-position: 2.5% center;
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@ input{
 
 /* Define el icono del placeholder Email*/
 #Email::placeholder{
-    background-image: url(../Imagenes/MailIcono.png);
+    background-image: url(../Imagenes/ImgForm/MailIcono.png);
     background-size: 15px, 15px;
     background-position: 2.5% center;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ input{
 
 /* Define el icono del placeholder Tel*/
 #Tel::placeholder{
-    background-image: url(../Imagenes/TelIcono.png);
+    background-image: url(../Imagenes/ImgForm/TelIcono.png);
     background-size: 15px, 15px;
     background-position: 2.5% center;
     background-repeat: no-repeat;
@@ -93,7 +93,7 @@ input{
 
 /* Define el icono del placeholder Dir*/
 #Dir::placeholder{
-    background-image: url(../Imagenes/DirIcono.png);
+    background-image: url(../Imagenes/ImgForm/DirIcono.png);
     background-size: 15px, 15px;
     background-position: 2.5% center;
     background-repeat: no-repeat;
@@ -102,7 +102,7 @@ input{
 
 /* Define el icono del placeholder Código*/
 #Código::placeholder{
-    background-image: url(../Imagenes/CodigoIcono.png);
+    background-image: url(../Imagenes/ImgForm/CodigoIcono.png);
     background-size: 15px, 15px;
     background-position: 2.5% center;
     background-repeat: no-repeat;
