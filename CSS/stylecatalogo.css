@@ -54,7 +54,31 @@ body{
         color: black;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-       
+  
+    /* se alinean las remeras, se le da color al texto y fuente, y se sube la altura del menu catalogo */
+    .menucalog{
+        position: relative;
+        justify-content: center;
+        display: flex;
+        background-color: white;
+        height: 500vh;
+        width: 100%;
+        text-align: center;
+    }
+    
+    
+    .remeras{
+        margin-bottom: 2px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .remeras p{
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
     /* se acomoda de vuelta el footer para este menu */
         footer{
     justify-content:center;
