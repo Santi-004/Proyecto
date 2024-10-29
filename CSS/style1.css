@@ -166,12 +166,6 @@ nav ul li a:hover{
     transform: translateY(-180%);
 }
 
-.icono1{
-    display: flex;
-    justify-content: center;
-    transform: translateY(-140%);
-}
-
 /* se aarma el cuerpo del footer */
 footer{
     justify-content:center;
