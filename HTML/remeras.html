@@ -34,24 +34,39 @@
       </section>
       
       <h2>Talles</h2>
-      <form action="">
-        <label for="radio">S</label>
-        <input type="radio" id="" name="S">
-        <label for="radio">M</label>
-        <input type="radio" id="" name="M">
-        <label for="radio">L</label>
-        <input type="radio" id="" name="L">
-        <label for="radio">XL
-        </label>
-        <input type="radio" id="" name="XL">
+
+      <!-- Formulario de talle -->
+      <form action="" id="talle-contenedor">
+        <!--Contenedor para los inputs del formulario  -->
+        <div class="talle-contenedor">
+          <!-- Labels con input y div dentro para poder seleccionar la opcion. -->
+          <label>
+            <input type="radio" name="talle" value="S">
+            <div class="opcion-talle">S</div>
+          </label>
+          <label>
+            <input type="radio" name="talle" value="M">
+            <div class="opcion-talle">M</div>
+          </label>
+          <label>
+            <input type="radio" name="talle" value="">
+            <div class="opcion-talle">L</div>
+          </label>
+          <label>
+            <input type="radio" name="talle" value="">
+            <div class="opcion-talle">XL</div>
+          </label>
+      </div>
     </form>
 
+    <!-- Información sobre el envío y link al formulario de envío -->
     <div id="Enviar">
       <a href="../HTML/formulario.html">Ir al formulario de Envío.</a>
       <p>Envío de ...</p>
       <p>Devoluciones antes de los ...</p>
     </div>
 
+    <!-- Deatils sobre la ropa -->
     <div id="detalles">
       <details>
         <summary>Descripción</summary>
@@ -67,6 +82,7 @@
       </details>
     </div>
     
+    <!-- Pie de pagina -->
       <footer>
         <section class="piedelapagina">
  

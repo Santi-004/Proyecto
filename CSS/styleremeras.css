@@ -1,0 +1,190 @@
+header{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header img{
+    width: 150px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a{
+    font-family: monospace;
+    color:white;
+    text-decoration: none;
+    font-size: 250%;
+}
+
+header .logo img {
+    height: 100px;
+    width: 100px;
+}
+
+nav ul li a:hover{
+    text-decoration:wavy;
+    color: white;
+    opacity: 50%;
+    text-decoration: underline;
+}
+
+/* Ajustando la posición de las imagenes del slider */
+#galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: black;
+    height: 400px;
+    padding: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Organiza los inputs */
+.talle-contenedor{
+    display: flex;
+    gap: 10px
+}
+
+/* Aplica el estilo a los div, los centra y los ordena  */
+.opcion-talle{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Oculta el input */
+input[type="radio"]{
+    display:none;
+}
+
+/* Aplica estilo cuando el input esta seleccionado */
+input[type="radio"]:checked + .opcion-talle{
+    background: linear-gradient(150deg, rgb(0, 99, 198), rgb(78, 99, 255), rgb(99, 160, 235));
+    color: white;
+    scale: 1.1;
+    box-shadow: 0 0 15px black;
+}
+
+
+    /* se acomoda de vuelta el footer para este menu */
+    footer{
+        justify-content:center;
+        display: flex;
+        padding: 0px;
+        margin: 1px;
+        background-color: black;
+        height: 456px;
+    }
+     
+    footer p{
+        color: white;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    /* se comienza a ajustar y armar todos las formas de contactos */
+    /* instagram */
+    .seguinos{
+        font-size: 15px;
+        display: flex;
+        margin:auto;
+        transform: translateX(-82%) translateY(798%);
+    }
+    
+    .ig{
+        display: flex;
+        transform: translateX(-92%) translateY(880%);
+    }
+    
+    /* contactos titulo */
+    .contactos{
+        font-size: 25px;
+        display: flex;
+        transform: translateX(-92%) translateY(-50%);
+    }
+    
+    /* todo el acomodado y armado de msj privado instagram */
+    .privig {
+        display: flex;
+        transform: translateX(-92%) translateY(-90%);
+    }
+    
+    .privig p{
+        color: rgb(148, 148, 148);
+        transform: translateX(2%) translateY(0%);
+    }
+    
+    .privig img{
+        display: flex;
+        transform: translateX(-10%) translateY(10%);
+    }
+    
+    /* todo el acomodado y armado de nuestro gmail */
+    .gmailconct{
+        display: flex;
+        transform: translateX(-92%) translateY(-90%);
+    }
+    
+    
+    .gmailconct p{
+        color: rgb(148, 148, 148);
+        transform: translateX(2%) translateY(0%);
+    }
+    
+    .gmailconct img{
+        transform: translateX(-10%) translateY(10%);
+    }
+    
+    /* todo el acomodado y armado de nuestro telefono */
+    .telf{
+        display: flex;
+        transform: translateX(-92%) translateY(-90%);
+    }
+    
+    .telf p{
+        color: rgb(148, 148, 148);
+        transform: translateX(2%) translateY(0%);
+    }
+    
+    .telf img{
+        display: flex;
+        transform: translateX(-10%) translateY(10%);
+    }
+    
+    /* todo el acomodado y armado del marquee */
+    .derechos{
+        width: 301%;
+        display: flex;
+        color: white;
+        transform: translateX(-35%) translateY(45%);
+    }
+    
+    /* todo el acomodado y armado del logo y titulo que estan dentro del footer */
+    .logo3{
+        display: flex;
+        height: 300px;
+        width: 300px;
+        transform: translateX(165%) translateY(-110%);
+    }
+    
+    .titulofoother{
+        font-size: 30px;
+        display: flex;
+        height: 150px;
+        width: 150px;
+        transform: translateX(420%) translateY(-230%);
+    }
+    
