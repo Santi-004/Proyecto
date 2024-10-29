@@ -1,0 +1,56 @@
+/* se define el tamaño y comienzo del body del menu catalogo */
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    /* se define el header de la pagina, encontraremos todos las cosas que se colocaron para generarlo */
+    header{
+        display: flex;
+        background-color: black;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    
+    header img{
+        width: 150px;
+    }
+    
+    nav ul{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+    }
+    
+    nav ul li a{
+        font-family: monospace;
+        color:white;
+        text-decoration: none;
+        font-size: 250%;
+    }
+    
+    header .logo img {
+        height: 100px;
+        width: 100px;
+    }
+    
+    nav ul li a:hover{
+        text-decoration:wavy;
+        color: white;
+        opacity: 50%;
+        text-decoration: underline;
+    }
+
+    .remeras{
+        margin-bottom: 2px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .remeras p{
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
