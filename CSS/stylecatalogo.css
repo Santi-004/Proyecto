@@ -61,7 +61,7 @@ body{
         justify-content: center;
         display: flex;
         background-color: white;
-        height: 500vh;
+        height: 600vh;
         width: 100%;
         text-align: center;
     }
@@ -79,6 +79,56 @@ body{
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
 
+    .remeras a{
+        text-decoration: none;
+    }
+
+    .compra1{
+        width: 30px;
+    }
+
+    .remeras button{
+        display: flex;
+        border: 0;
+        background-image: linear-gradient(150deg, rgb(0, 99, 198), rgb(0, 21, 182), rgb(99, 160, 235));
+        border-radius: 8px;
+        color: white;
+        font-size: 18px;
+        padding: 4px;
+        cursor: pointer;
+        transition: .3s;
+    }
+
+   .remeras span{
+    background-color: black;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+   }    
+
+   .remeras button:hover span{
+    background: none;
+   }
+
+   .remeras button :active{
+    transform: scale(0.9);
+   }
+
+ .remera1{
+    border: 5px solid transparent;
+    border-image: linear-gradient(to right, #7b7b7b, #353535) 3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    border-color: black;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    transition: transform 0.3s;
+ }
+ 
+ .remera1:hover{
+    transform: translateY(-3px);
+ }
     /* se acomoda de vuelta el footer para este menu */
         footer{
     justify-content:center;
