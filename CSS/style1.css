@@ -256,3 +256,20 @@ footer #navegacion, #contacto, #redes, #logo{
     max-height: 250px;
 
 }
+
+/* centrando el logo */
+#logo{
+    justify-content: center;
+    align-items: center;
+}
+
+/* centrando imagenes y texto, definiendo margen, ancho y alto. */
+#tel, #mail, #msg, #IG{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 15px;
+    width: 100%;
+    height: 25px;
+}
+
