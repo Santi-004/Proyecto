@@ -5,42 +5,73 @@ padding: 0;
 box-sizing: border-box;
 }
 
+
 /* se define el header de la pagina, encontraremos todos las cosas que se colocaron para generarlo */
+
 header{
-    display: flex;
     background-color: black;
+    display:flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-}
-
-header img{
-    width: 150px;
-}
-
-nav ul{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-}
-
-nav ul li a{
-    font-family: monospace;
-    color:white;
-    text-decoration: none;
-    font-size: 250%;
-}
-
-header .logo img {
+    margin: 0 auto;
+    width: 100%;
     height: 100px;
-    width: 100px;
+    max-width: 1500px;
+
 }
 
-nav ul li a:hover{
-    text-decoration:wavy;
+header .logohead{
+ cursor: pointer;
+
+}
+
+header .logohead img{
+    height: 70px;
+    width: auto;
+    animation: 0.8s;
+}
+
+header .logohead img:hover{
+    transform: scale(1.1);
+}
+
+header .casilleros {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+header .casilleros li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .casilleros li:hover{
+    transform: scale(1.1);
+}
+
+header .casilleros a{
+    font-size: 20px;
     color: white;
-    opacity: 50%;
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+.bar{
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+@media(max-width: 900px){
+   .navbar .casilleros{
+        display: none;
+    }
+   
+    .navbar .bar{
+        display: block ;
+        margin-right: 20px;
+    }
 }
 
 /* se define las caracteristicas y fondo del menu */
