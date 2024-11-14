@@ -17,6 +17,7 @@ header{
     width: 100%;
     height: 100px;
     max-width: 1500px;
+    position: relative;
 
 }
 
@@ -63,6 +64,37 @@ header .casilleros a{
     display: none;
 }
 
+.drop-bar{
+    z-index: 999;
+}
+
+.drop-bar{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    width: 300px;
+    top: 20px;
+    height: 0;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateX(-20px) translateY(100px);
+}
+
+.drop-bar.open{
+    height: 170px;
+    display: block;
+}
+
+.drop-bar li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 @media(max-width: 900px){
    .navbar .casilleros{
         display: none;
@@ -72,6 +104,12 @@ header .casilleros a{
         display: block ;
         margin-right: 20px;
     }
+
+    .drop-bar{
+        display: block;
+    }
+
+    
 }
 
 /* se define las caracteristicas y fondo del menu */
