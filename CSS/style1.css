@@ -334,3 +334,30 @@ footer .logo{
 .marquee{
     width: 100%;   
 }
+
+/* color, posición, pading y display del link */
+footer .linkanimado {
+    color: white;
+    text-decoration: none;
+    position: relative; 
+    display: inline-block; /* permite que link actue como un bloque */
+    padding-bottom: 2px;
+}
+
+/* Animación del texto antes de que el mouse se posicione sobre el */
+footer .linkanimado::before{
+    content: "";
+    position: absolute; /* Se posiciona por encima del .linkanimado */
+    bottom: 0; /* Posiciona el subrayado debajo del texto */
+    left: 50%; /* Hace que el subrayado empiece en el centro */
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease; /* Animación width va a tardar 0.3s en estar al 100% del ancho y left en estar a 0 px */
+}
+
+/* Cambio de ancho y left cuando el mouse esta sobre el link */
+footer .linkanimado:hover::before{
+    width: 100%;
+    left: 0;
+}
