@@ -290,3 +290,47 @@ footer #navegacion, #contacto, #redes, #logo{
 #msg img:not(:hover) , #IG img:not(:hover){
     animation: rotacion 0.8s;
 }
+
+/* Margen para los titulos. */
+footer h3{
+    margin: 10px;
+
+}
+
+/* Margen para los textos de los links. */
+footer a p{
+    margin: 0;
+    padding: 0;
+}
+
+/* Margen para los links del nav. */
+.nav{
+    margin: 15px;
+}
+
+/* tamaño y margen de los iconos del footer. */
+footer .iconos {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+
+}
+
+/* tamaño y mmargen del logo. */
+footer .logo{
+    max-width: 150px;
+    max-height: 150px;
+    margin: 5px;
+}
+
+/* Reforma del tamaño de la imagen del mail. */
+#mail img{
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+
+/* Ancho del marquee. */
+.marquee{
+    width: 100%;   
+}
