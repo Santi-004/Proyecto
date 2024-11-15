@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* se define el tamaño y comienzo del body del menu */
 body{
 margin:0;
 padding: 0;
 box-sizing: border-box;
+font-family: "Montserrat", sans-serif;
 }
 
 
@@ -16,9 +19,8 @@ header{
     margin: 0 auto;
     width: 100%;
     height: 100px;
-    max-width: 1500px;
     position: relative;
-
+    font-family: "Montserrat", sans-serif;
 }
 
 header .logohead{
@@ -30,20 +32,20 @@ header .logohead img{
     height: 70px;
     width: auto;
     animation: 0.8s;
+    transform: translateX(20px);
 }
 
 header .logohead img:hover{
-    transform: scale(1.1);
+    transform: scale(1.1) translateX(20px);;
 }
 
 header .casilleros {
-    list-style: none;
     display: flex;
     gap: 2rem;
+    transform: translateX(-20px);
 }
-
-header .casilleros li{
-    display: inline-block;
+li{
+    list-style: none;
     padding: 0 20px;
 }
 
@@ -51,9 +53,9 @@ header .casilleros li:hover{
     transform: scale(1.1);
 }
 
-header .casilleros a{
+ a{
     font-size: 20px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -72,28 +74,39 @@ header .casilleros a{
     display: none;
     position: absolute;
     right: 2rem;
-    width: 300px;
+    width: 400px;
     top: 20px;
     height: 0;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transform: translateX(-2px) translateY(100px);
+    transform: translateX(26px) translateY(100px);
+}
+
+.drop-bar a{
+    color: black;
+    padding: 33px;
+    width: 300px;
+    text-align: center;
 }
 
 .drop-bar.open{
-    height: 170px;
+    height: 355px;
     display: block;
 }
 
 .drop-bar li{
-  padding: 0.7rem;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-
+ text-decoration: none;
 }
+
+.drop-bar li:hover{
+   background-color: rgb(194, 194, 194);
+  }
 
 @media(max-width: 900px){
    .navbar .casilleros{
@@ -140,19 +153,17 @@ header .casilleros a{
 
 .iniciomenu p{
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .iniciomenu h1{
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 /* se ajusta y coloca animación a la bienvenida */
 .bienvenida{
     display: flex;
     justify-content: center;
-    font-size: 3vw;
+    font-size: 40px;
     transform: translateY(110%);
     animation: anim 2.5s linear forwards;
     overflow: hidden;
@@ -187,143 +198,203 @@ header .casilleros a{
 
 /* se ajusta el logo, nombre de la marca y el sobrenosotros */
 .logo2{
-    display: flex;
+    display: block;
     top: 25%;
     justify-content: center;
-    transform: translateY(55%);
+    transform: translateY(45%);
 }
 
-.titulo{
-    display: flex;
-    justify-content: center;
-    font-size: 3vw;
-    transform: translateY(54%);
+.logo2 img{
+    transform: translateY(0%);
 }
 
-.sobrenosotros{
-    font-size:1.5vw;
+.logo2 h1{
+    justify-content: center;
+    font-size: 40px;
+    transform: translateY(-180%);
+}
+
+.logo2 p{
+    font-size:20px;
     justify-content: center;
     display: flex;
-    transform: translateY(10%);
+    transform: translateY(-50%);
 }
 
 /* se ajusta el titulo de acerca de y su información */
 .acercade{
-    display: flex;
+    display: block;
     justify-content: center;
-    font-size: 2.5vw;
+    font-size: 30px;
     transform: translateY(70%);
 }
 
-.info-acercade{
-    display: flex;
+.acercade p{
     justify-content: center;
-    font-size: 1.5vw;
-    transform: translateY(10%);
+    font-size: 20px;
+    transform: translateY(-20%);
 }
 
 /* se ajusta el las p y logo de compra */
 .redirección{
-    display: flex;
+    display: block;
     justify-content: center;
-    font-size: 2.5vw;
-    transform: translateY(-10%);
+    font-size: 30px;
+    transform: translateY(70%);
 }
 
-.hazclick{
+.redirección a{
     display: flex;
     justify-content: center;
-    font-size: 1,4vw;
-    transform: translateY(-180%);
+    margin: 0;
+    font-size: 20px;
+    transform: translateY(-90%);
+    list-style: none;
+    display: inline-block;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 359px) and (max-width: 735px) {
     /* Reducimos el tamaño del texto para pantallas más pequeñas */
     .bienvenida {
-        font-size: 3vw; /* Más pequeño en pantallas pequeñas */
+
+        font-size: 14px; /* Más pequeño en pantallas pequeñas */
         transform: translateY(400%) translateX(0);
     }
 
+    .logo2{
+        transform: translateY(70%) translateX(0);
+    }
+
     .logo2 img{
-        display: flex;
-        transform: translateY(30%) translateX(0);
-        width: 150%; /* El logo se hace más pequeño en móviles */
-        height: 150%;
+
+        width: 200px; /* El logo se hace más pequeño en móviles */
+        height: 250px;
     }
 
-    .titulo {
-        font-size: 4vw; /* Título más pequeño */
-        transform: translateY(500%) translateX(0);
+    .logo2 h1{
+        font-size: 20px; /* Título más pequeño */
     }
 
-    .sobrenosotros {
-        font-size: 2.5vw; /* Ajustamos el tamaño de los párrafos */
-        transform: translateY(250%) translateX(0);
+    .logo2 p{
+        font-size: 15px; /* Ajustamos el tamaño de los párrafos */
+        transform: translateY(10%) translateX(0);
     }
 
     .acercade {
-        font-size: 3.5vw;
-        transform: translateY(1000%) translateX(0);
+        font-size: 20px;
+        transform: translateY(115%) translateX(0);
     }
 
-    .info-acercade {
-        font-size: 2.5vw;
-        transform: translateY(350%) translateX(0);
+    .acercade p {
+        font-size: 15px;
+ 
     }
 
     .redirección {
-        font-size: 3.5vw;
-        transform: translateY(1200%) translateX(0);
+        font-size: 20px;
+        transform: translateY(200%) translateX(0);
     }
 
-    .hazclick {
-        font-size: 2.4vw;
-        transform: translateY(1800%) translateX(0);
+    .redirección a {
+        font-size: 15px;
+
     }
 }
 
-/* Media Queries para pantallas medianas (tabletas, entre 768px y 990px) */
-@media (min-width: 768px) and (max-width: 990px) {
+@media (max-width: 358px) {
+    /* Reducimos el tamaño del texto para pantallas más pequeñas */
     .bienvenida {
-        font-size: 3vw;
-        transform: translateY(200%) translateX(0);
-    }
 
-    .logo2 img{
-        transform: translateY(60%) translateX(35%);
-        width: 60%;
-    }
-
-    .titulo {
-        font-size: 3vw;
-        transform: translateY(200%) translateX(0);
-    }
-
-    .sobrenosotros {
-        font-size: 1.5vw;
-        transform: translateY(150%) translateX(0);
-    }
-
-    .acercade {
-        font-size: 2.5vw;
+        font-size: 13px; /* Más pequeño en pantallas pequeñas */
         transform: translateY(400%) translateX(0);
     }
 
-    .info-acercade {
-        font-size: 1.5vw;
-        transform: translateY(250%) translateX(0);
+    .logo2{
+        transform: translateY(80%) translateX(0);
+    }
+
+    .logo2 img{
+
+        width: 150px; /* El logo se hace más pequeño en móviles */
+        height: 200px;
+    }
+
+    .logo2 h1{
+        font-size: 15px; /* Título más pequeño */
+    }
+
+    .logo2 p{
+        font-size: 13px; /* Ajustamos el tamaño de los párrafos */
+        transform: translateY(10%) translateX(0);
+    }
+
+    .acercade {
+        font-size: 15px;
+        transform: translateY(135%) translateX(0);
+    }
+
+    .acercade p {
+        font-size: 13px;
+        transform: translateY(0) translateX(0);
     }
 
     .redirección {
-        font-size: 2.5vw;
-        transform: translateY(450%) translateX(0);
+        font-size: 15px;
+        transform: translateY(300%) translateX(0);
     }
 
-    .hazclick {
-        font-size: 1.5vw;
-        transform: translateY(700%) translateX(0);
+    .redirección a {
+        font-size: 13px;
+
     }
 }
+/* Media Queries para pantallas medianas (tabletas, entre 768px y 990px) */
+@media (min-width: 736px) and (max-width: 990px) {
+    .bienvenida {
+
+        font-size: 30px; /* Más pequeño en pantallas pequeñas */
+        transform: translateY(200%) translateX(0);
+    }
+
+    .logo2{
+        transform: translateY(35%) translateX(0);
+    }
+
+    .logo2 img{
+        width: 300px; /* El logo se hace más pequeño en móviles */
+        height: 350px;
+    }
+
+    .logo2 h1{
+        font-size: 35px; /* Título más pequeño */
+    }
+
+    .logo2 p{
+        font-size: 20px; /* Ajustamos el tamaño de los párrafos */
+        transform: translateY(0%) translateX(0);
+    }
+
+    .acercade {
+        font-size: 35px;
+        transform: translateY(35%) translateX(0);
+    }
+
+    .acercade p {
+        font-size: 20px;
+ 
+    }
+
+    .redirección {
+        font-size: 25px;
+        transform: translateY(30%) translateX(auto);
+    }
+
+    .redirección a {
+        font-size: 20px;
+
+    }
+}
+
 /* se aarma el cuerpo del footer */
 footer{
     display: flex;
