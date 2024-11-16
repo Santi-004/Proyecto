@@ -12,7 +12,7 @@ font-family: "Montserrat", sans-serif;
 /* se define el header de la pagina, encontraremos todos las cosas que se colocaron para generarlo */
 
 header{
-    background-color: black;
+    background-color: #262426;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +74,7 @@ header .casilleros li:hover{
     display: none;
     position: absolute;
     right: 2rem;
-    width: 400px;
+    width: 362px;
     top: 20px;
     height: 0;
     background-color: white;
@@ -239,8 +239,8 @@ header .casilleros li:hover{
 .redirección{
     display: block;
     justify-content: center;
-    font-size: 30px;
-    transform: translateY(70%);
+    font-size: 20px;
+    transform: translateY(100%);
 }
 
 .redirección a{
@@ -248,7 +248,7 @@ header .casilleros li:hover{
     justify-content: center;
     margin: 0;
     font-size: 20px;
-    transform: translateY(-90%);
+    transform: translateY(-160%);
     list-style: none;
     display: inline-block;
 }
@@ -385,8 +385,8 @@ header .casilleros li:hover{
     }
 
     .redirección {
-        font-size: 25px;
-        transform: translateY(30%) translateX(auto);
+        font-size: 20px;
+        transform: translateY(40%) translateX(0);
     }
 
     .redirección a {
