@@ -269,7 +269,7 @@ header .casilleros li:hover{
     text-shadow: 2px 2px 8px rgb(255, 255, 255);
 }
 
-/* se aarma el cuerpo del footer */
+/* se arma el cuerpo del footer */
 footer{
     display: flex;
     flex-wrap: wrap;
@@ -286,9 +286,8 @@ footer #navegacion, #contacto, #redes, #logo{
     flex-grow: 1;
     margin: 20px;
     text-align: center;
-    max-width: 250px;
-    max-height: 250px;
-
+    max-width: 300px;
+    max-height: 300px;
 }
 
 /* centrando el logo */
@@ -331,10 +330,13 @@ footer h3{
 
 }
 
-/* Margen para los textos de los links. */
-footer a p{
+/* Margen para los textos. */
+footer p{
     margin: 0;
     padding: 0;
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
 }
 
 /* Margen para los links del nav. */
