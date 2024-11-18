@@ -44,7 +44,6 @@ body{
 
 }
 
-
 /* Margen del titulo */
 #detalle-ropa h3{
     margin: 0 0 20px 0;
@@ -134,4 +133,58 @@ body{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+/* Organiza los inputs */
+.talle-contenedor{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    max-height: 60px;
+    justify-content: center;
+  }
+
+.caja-label{
+  width: 50px;
+  height: 50px;
+}
+
+.caja-label label{
+    width: 100%;
+    height: 100%;
+}
+
+/* Aplica el estilo a los div, los centra y los ordena  */
+.opcion-talle{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Oculta el input */
+input[type="radio"]{
+    display:none;
+}
+
+/* Aplica estilo cuando el input esta seleccionado */
+input[type="radio"]:checked + .opcion-talle{
+    background: linear-gradient(150deg, rgb(0, 99, 198), rgb(78, 99, 255), rgb(99, 160, 235));
+    color: black;
+    animation: ampliar 0.2s ease-in-out;
+    scale: 1.1;
+}
+
+/* Animacion de ampliar */
+@keyframes ampliar {
+    0%{
+        scale: 1.0;
+    }
+    100%{
+        scale: 1.1;
+    }
 }
