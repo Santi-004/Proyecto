@@ -372,7 +372,7 @@ footer .logo{
 }
 
 /* color, posición, pading y display del link */
-footer .linkanimado {
+footer .linkanimado , header .linkanimado {
     color: white;
     text-decoration: none;
     position: relative; 
@@ -381,7 +381,7 @@ footer .linkanimado {
 }
 
 /* Animación del texto antes de que el mouse se posicione sobre el */
-footer .linkanimado::before{
+footer .linkanimado::before , header .linkanimado::before{
     content: "";
     position: absolute; /* Se posiciona por encima del .linkanimado */
     bottom: 0; /* Posiciona el subrayado debajo del texto */
@@ -393,7 +393,7 @@ footer .linkanimado::before{
 }
 
 /* Cambio de ancho y left cuando el mouse esta sobre el link */
-footer .linkanimado:hover::before{
+footer .linkanimado:hover::before , header .linkanimado:hover::before{
     width: 100%;
     left: 0;
 }
