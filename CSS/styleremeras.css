@@ -1,10 +1,138 @@
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&display=swap');
+
+/* se define el tamaño y comienzo del body del menu */
+
+html{
+    scroll-behavior: smooth;
 }
 
+body{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Montserrat", sans-serif;
+}
+
+
+/* se define el header de la pagina, encontraremos todos las cosas que se colocaron para generarlo */
+
+header{
+    background-color: #262426;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+}
+
+header .logohead{
+ cursor: pointer;
+
+}
+
+header .logohead img{
+    height: 70px;
+    width: auto;
+    animation: 0.8s;
+    transform: translateX(20px);
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+header .logohead img:hover{
+    transform: scale(1.1) translateX(20px);
+}
+
+header .casilleros {
+    display: flex;
+    gap: 2rem;
+    transform: translateX(-20px);
+}
+
+li{
+    list-style: none;
+    padding: 0 20px;
+    transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+header .casilleros li:hover{
+    transform: scale(1.1);
+}
+
+ a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.bar{
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+.drop-bar{
+    z-index: 999;
+}
+
+.drop-bar{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    width: 362px;
+    top: 20px;
+    height: 0;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateX(26px) translateY(100px);
+}
+
+.drop-bar a{
+    color: black;
+    padding: 33px;
+    width: 300px;
+    text-align: center;
+}
+
+.drop-bar.open{
+    height: 355px;
+    display: block;
+}
+
+.drop-bar li{
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ text-decoration: none;
+}
+
+.drop-bar li:hover{
+   background-color: rgb(194, 194, 194);
+  }
+
+@media(max-width: 900px){
+   .navbar .casilleros{
+        display: none;
+    }
+   
+    .navbar .bar{
+        display: block ;
+        margin-right: 20px;
+    }
+
+    .drop-bar{
+        display: block;
+    }
+
+    
+}
 /* Definición del estilo de #ropa */
 #ropa{
     display: flex;
