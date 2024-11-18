@@ -240,3 +240,38 @@ input[type="radio"]:checked + .opcion-talle{
 #envio p , #devolucion p{
     margin: 6px 0 6px 0;
 }
+
+
+/* Centrado, display y margen del contenedor de los details */
+#detalles{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10%;
+}
+
+/* Efecto cuando el cursor se posiciona sobre el details */
+details:hover{
+    animation: ampliar 0.2s ease-in-out;
+    scale: 1.05;
+}
+
+#detalles details{
+    width: 100%;
+}
+
+/* Diseño del summary */
+summary{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: auto;
+    justify-content: center;
+    list-style: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+    background: linear-gradient(150deg, rgb(0, 99, 198), rgb(166, 174, 238), rgb(0, 99, 198));
+    border: 3px solid black;
+    border-radius: 10px;
+}
