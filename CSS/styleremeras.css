@@ -188,3 +188,55 @@ input[type="radio"]:checked + .opcion-talle{
         scale: 1.1;
     }
 }
+
+/* Tamaño del carrito*/
+#carrito{
+    margin: 25px;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Estilo para el boton del carrito */
+#carrito button{
+    margin: 0;
+    padding: 0;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 100%;
+    height: 40px;
+}
+
+/* Estilo para el boton del carrito cuando el cursor esta encima */
+#carrito button:hover{
+    scale: 1.1;
+    box-shadow: 0px 0px 15px black;
+    cursor: pointer;
+    animation: ampliar 0.2s ease-in-out;
+}
+
+/* Estilo cuando el boton es activado */
+#carrito button:active{
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 15px greenyellow;
+}
+
+/* Tamaño de los contenedores de envio y devolución. */
+#envio , #devolucion{
+    display: flex;
+    width: 100%;
+    height: 25px;
+    margin: 10px;
+}
+
+/* Tamaño de las imagenes de envio y devolucion. */
+#envio img , #devolucion img{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+/* Margen del texto de envio y devolución. */
+#envio p , #devolucion p{
+    margin: 6px 0 6px 0;
+}
