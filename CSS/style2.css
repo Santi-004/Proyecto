@@ -167,14 +167,18 @@ header .casilleros li:hover{
 /* Define el color del fondo del formulario, alto, ancho, margin, padding, bordes y centra los inputs del formulario */
 #Formulario{
     background-color: black;
-    width: 400px;
-    height: 440px;
+    width: 450px;
+    height:540px;
     text-align: center;
     position: relative;
     border-radius: 15px;
     border: 2px, solid, black;
     padding: 25px;
     animation: arriba-abajo 3s ease-in-out infinite;
+}
+
+p{
+    color: white;
 }
 
 /* Animacion de movimiento para el formulario */
